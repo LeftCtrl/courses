@@ -23,6 +23,11 @@ namespace hoff.courses.BL.Services.Implementation
       _options = options.Value;
     }
 
+    /// <summary>
+    /// На вход подаётся координата, в декартовой системе координат. 
+    /// В зависимости от попадания в соответствующий квадрант, с учётом вхождения(попадания) координаты в заданную окружность радиуса R, 
+    /// требуется получить курс иностранной валюты с сайта ЦБ РФ к рублю РФ на соответствующую дату
+    /// </summary>
     public ICurrencyCourse GetCourse(IPoint point)
     {
       if (!_geometryService.CheckPointInCircle(point, _options.CircleRadius))
