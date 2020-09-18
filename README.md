@@ -77,7 +77,9 @@ https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-
 
 4.2) Посмотреть что там с хранением логов на диске / их архивированием
 
-5) Добавить Swagger для тестирования API
+5) Разнести DI по сборкам: свой dependencyResolver.cs с методом ConfigureServices(ServiceCollection services) в каждом проекте
+
+6) Добавить Swagger для тестирования API
 
 ==Вопросы по тех.заданию==
 
