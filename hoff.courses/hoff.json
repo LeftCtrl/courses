@@ -1,0 +1,7 @@
+{
+  "hoff": {
+    "cbrUri": "http://www.cbr.ru/DailyInfoWebServ/DailyInfo.asmx", //Адрес API ЦБ РФ
+    "circleRadius": "10", //Радиус окружности
+    "currencyCode": "USD" //Код иностранной валюты
+  }
+}

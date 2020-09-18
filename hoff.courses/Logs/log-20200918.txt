@@ -1,0 +1,98 @@
+2020-09-18T06:47:45.8809393+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-09-18T06:47:45.8887418+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-09-18T06:47:45.8901709+07:00  [INF] Content root path: "H:\tmp\git\hoff.courses\hoff.courses" (b5d60022)
+2020-09-18T06:47:50.9396798+07:00 8000002d-0005-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+hoff.courses.Core.Exceptions.HoffException: Не удалось определить четверть круга: точка лежит на оси координат
+   at hoff.courses.BL.Services.Implementation.CourseService.ConvertPositionToDate(PlanePosition plainPosition) in H:\tmp\git\hoff.courses\hoff.courses.BL\Services\Implementation\CourseService.cs:line 53
+   at hoff.courses.BL.Services.Implementation.CourseService.GetCourse(IPoint point) in H:\tmp\git\hoff.courses\hoff.courses.BL\Services\Implementation\CourseService.cs:line 32
+   at hoff.courses.Controllers.V1.CoursesController.Get(Point point) in H:\tmp\git\hoff.courses\hoff.courses\Controllers\V1\CoursesController.cs:line 30
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-18T07:02:07.0680581+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-09-18T07:02:07.0744652+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-09-18T07:02:07.0756927+07:00  [INF] Content root path: "H:\tmp\git\hoff.courses\hoff.courses" (b5d60022)
+2020-09-18T07:05:20.2776924+07:00 8000001a-0001-ff00-b63f-84710c7967bb [INF] GET /api/v1/courses  (84ea0df6)
+2020-09-18T07:05:22.1533148+07:00 8000001a-0001-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+hoff.courses.Core.Exceptions.HoffException: Не удалось определить четверть круга: точка лежит на оси координат
+   at hoff.courses.BL.Services.Implementation.CourseService.ConvertPositionToDate(PlanePosition plainPosition) in H:\tmp\git\hoff.courses\hoff.courses.BL\Services\Implementation\CourseService.cs:line 53
+   at hoff.courses.BL.Services.Implementation.CourseService.GetCourse(IPoint point) in H:\tmp\git\hoff.courses\hoff.courses.BL\Services\Implementation\CourseService.cs:line 32
+   at hoff.courses.Controllers.V1.CoursesController.Get(Point point)
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-18T07:05:26.7673821+07:00 8000001e-0003-ff00-b63f-84710c7967bb [INF] GET /api/v1/courses ?x=1&y=2 (dd09b583)
+2020-09-18T07:05:28.0781450+07:00 80000020-0003-ff00-b63f-84710c7967bb [INF] GET /api/v1/courses ?x=1&y=2 (dd09b583)
+2020-09-18T07:05:50.5520108+07:00 8000002f-0005-ff00-b63f-84710c7967bb [INF] GET /api/v1/courses?x=1&y=2 (ea478421)
+2020-09-18T07:11:08.7751259+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-09-18T07:11:08.7823182+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-09-18T07:11:08.7834391+07:00  [INF] Content root path: "H:\tmp\git\hoff.courses\hoff.courses" (b5d60022)
+2020-09-18T07:11:08.8725500+07:00 80000022-0003-ff00-b63f-84710c7967bb [INF] GET /api/v1/courses --cf89a94d-2702-4b9c-b67a-fb2e36e4fafd (d758d52c)
+2020-09-18T07:11:12.2099372+07:00 80000022-0003-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+hoff.courses.Core.Exceptions.HoffException: Не удалось определить четверть круга: точка лежит на оси координат
+   at hoff.courses.BL.Services.Implementation.CourseService.ConvertPositionToDate(PlanePosition plainPosition) in H:\tmp\git\hoff.courses\hoff.courses.BL\Services\Implementation\CourseService.cs:line 53
+   at hoff.courses.BL.Services.Implementation.CourseService.GetCourse(IPoint point) in H:\tmp\git\hoff.courses\hoff.courses.BL\Services\Implementation\CourseService.cs:line 32
+   at hoff.courses.Controllers.V1.CoursesController.Get(Point point) in H:\tmp\git\hoff.courses\hoff.courses\Controllers\V1\CoursesController.cs:line 39
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-18T07:11:15.8400824+07:00 80000025-0006-ff00-b63f-84710c7967bb [INF] GET /api/v1/courses?x=1&y=2 --284c6ca6-bcf0-479e-b88b-529ac910e796 (de953f89)
+2020-09-18T07:11:16.1659458+07:00 80000025-0006-ff00-b63f-84710c7967bb [INF] Done {"CourseDate":{"Calendar":{"Id":"ISO","Name":"ISO","MinYear":-9998,"MaxYear":9999,"Eras":[{"Name":"BCE"},{"Name":"CE"}]},"Year":2020,"Month":9,"Day":18,"DayOfWeek":5,"YearOfEra":2020,"Era":{"Name":"CE"},"DayOfYear":262},"CourseValue":75.1941,"CurrencyName":"\u0414\u043E\u043B\u043B\u0430\u0440 \u0421\u0428\u0410                                                                                                                                                                                                                                                    "} --284c6ca6-bcf0-479e-b88b-529ac910e796 (0657d901)
+2020-09-18T07:11:16.4224866+07:00 80000031-0005-ff00-b63f-84710c7967bb [INF] GET /api/v1/courses?x=1&y=2 --973fbf28-6c58-47f8-a6cd-9e2e44ef17e8 (783fe281)
+2020-09-18T07:11:16.5861688+07:00 80000031-0005-ff00-b63f-84710c7967bb [INF] Done {"CourseDate":{"Calendar":{"Id":"ISO","Name":"ISO","MinYear":-9998,"MaxYear":9999,"Eras":[{"Name":"BCE"},{"Name":"CE"}]},"Year":2020,"Month":9,"Day":18,"DayOfWeek":5,"YearOfEra":2020,"Era":{"Name":"CE"},"DayOfYear":262},"CourseValue":75.1941,"CurrencyName":"\u0414\u043E\u043B\u043B\u0430\u0440 \u0421\u0428\u0410                                                                                                                                                                                                                                                    "} --973fbf28-6c58-47f8-a6cd-9e2e44ef17e8 (e9a9914d)
+2020-09-18T07:11:25.7638472+07:00 8000002d-0002-ff00-b63f-84710c7967bb [INF] GET /api/v1/courses?x=1&y=2 --8eeda198-69a1-4585-ad1a-2807f62e5615 (21a66580)
+2020-09-18T07:32:11.0358119+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-09-18T07:32:11.0421932+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-09-18T07:32:11.0431035+07:00  [INF] Content root path: "H:\tmp\git\hoff.courses\hoff.courses" (b5d60022)
+2020-09-18T07:32:11.1250873+07:00 80000024-0003-ff00-b63f-84710c7967bb [INF] GET /api/v1/courses -requestId-93cf8243-f46e-4e44-b3b2-49b08ba85330 (a4e98026)
+2020-09-18T07:32:11.1933976+07:00 80000024-0003-ff00-b63f-84710c7967bb [WRN] -requestId-93cf8243-f46e-4e44-b3b2-49b08ba85330 (675c1d78)
+hoff.courses.Core.Exceptions.HoffException: Не удалось определить четверть круга: точка лежит на оси координат
+   at hoff.courses.BL.Services.Implementation.CourseService.ConvertPositionToDate(PlanePosition plainPosition) in H:\tmp\git\hoff.courses\hoff.courses.BL\Services\Implementation\CourseService.cs:line 53
+   at hoff.courses.BL.Services.Implementation.CourseService.GetCourse(IPoint point) in H:\tmp\git\hoff.courses\hoff.courses.BL\Services\Implementation\CourseService.cs:line 32
+   at hoff.courses.Controllers.V1.CoursesController.Get(Point point) in H:\tmp\git\hoff.courses\hoff.courses\Controllers\V1\CoursesController.cs:line 42
+2020-09-18T07:32:19.4666557+07:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] GET /api/v1/courses?x=1&y=2 -requestId-2e89e2d6-c092-48e5-9f2b-c9460076329a (a8f508cd)
+2020-09-18T07:32:19.8062895+07:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Done -requestId-2e89e2d6-c092-48e5-9f2b-c9460076329a (8240f3d2)
+2020-09-18T07:32:20.2394706+07:00 80000021-0000-ff00-b63f-84710c7967bb [INF] GET /api/v1/courses?x=1&y=2 -requestId-56a35228-0065-4346-a7b3-cc00ca461b6a (04d5527f)
+2020-09-18T07:32:20.4565507+07:00 80000021-0000-ff00-b63f-84710c7967bb [INF] Done -requestId-56a35228-0065-4346-a7b3-cc00ca461b6a (988bcbe0)
+2020-09-18T07:32:25.6709198+07:00 8000001c-0001-ff00-b63f-84710c7967bb [INF] GET /api/v1/courses?x=1&y=0 -requestId-5f36d2c4-2bfa-4176-94e9-e3a47e885bab (c615a6ef)
+2020-09-18T07:32:25.6857904+07:00 8000001c-0001-ff00-b63f-84710c7967bb [WRN] -requestId-5f36d2c4-2bfa-4176-94e9-e3a47e885bab (e37c4792)
+hoff.courses.Core.Exceptions.HoffException: Не удалось определить четверть круга: точка лежит на оси координат
+   at hoff.courses.BL.Services.Implementation.CourseService.ConvertPositionToDate(PlanePosition plainPosition) in H:\tmp\git\hoff.courses\hoff.courses.BL\Services\Implementation\CourseService.cs:line 53
+   at hoff.courses.BL.Services.Implementation.CourseService.GetCourse(IPoint point) in H:\tmp\git\hoff.courses\hoff.courses.BL\Services\Implementation\CourseService.cs:line 32
+   at hoff.courses.Controllers.V1.CoursesController.Get(Point point) in H:\tmp\git\hoff.courses\hoff.courses\Controllers\V1\CoursesController.cs:line 42
